@@ -1,0 +1,12 @@
+<div class="card mt-3">
+    <div class="card-header">{{taskName}}</div>
+        <div class="card-body">
+            {{taskDesc}} 
+        </div>
+        <app-assign-task [task]="fullTask" [taskId]="taskID"></app-assign-task>
+<!-- 
+        <div class="card-header">{{fullTask.project}}</div>
+        <div class="card-body">
+            {{fullTask.description}} 
+        </div> -->
+</div>

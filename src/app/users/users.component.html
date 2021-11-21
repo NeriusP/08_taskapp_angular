@@ -1,0 +1,9 @@
+<div class="card mt-3">
+    <div class="card-header">Darbuotojų sąrašas</div>
+        <div class="card-body" *ngFor="let user of userList; let i = index">
+            {{user.name}} {{user.surname}}
+            <app-user-task [oneuser]="user" [userTasks]="user.tasks"></app-user-task>
+        </div>
+</div>
+    
+<app-add-user></app-add-user>

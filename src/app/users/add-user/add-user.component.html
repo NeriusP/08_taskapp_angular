@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-header" (click)="display=!display">Pridėti naują vartotoją</div>
+    <div class="card-body" *ngIf="display">
+        <div class="mb-3">Vardas  <input type="text" class="form-control" #userName> </div>
+        <div class="mb-3">Pavardė <input type="text" class="form-control" #userSurname> </div>
+        <button class="btn btn-success" (click)="addUser(userName, userSurname)" >Pridėti vartotoją</button>
+    </div>
+    
+    <!--  -->
+</div>

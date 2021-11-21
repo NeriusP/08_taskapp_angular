@@ -1,0 +1,10 @@
+<div class="card border-dark card mt-3">
+    <div class="card-header">Užduočių sąrašas</div>
+        <div class="card-body" *ngFor="let task of taskList; let i = index">
+            <app-taskitem [fullTask]="task" [taskName]="task.project" [taskDesc]="task.description" [taskID]="i"></app-taskitem>
+        </div>
+</div>
+
+<app-add-task></app-add-task>
+
+

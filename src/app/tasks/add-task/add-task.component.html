@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-header">Sukurti naują užduotį</div>
+    <div class="card-body">
+        <div class="mb-3">Projekto pavadinimas  <input type="text" class="from-control" #taskName></div>
+        <div class="mb-3">Projekto aprašymas <input type="text" class="from-control" #tascDesc></div>
+    </div>
+    <button class="btn btn-success" (click)="addTask(taskName.value, tascDesc.value)">Pridėti užduotį</button>
+</div>

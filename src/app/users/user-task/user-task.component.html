@@ -1,0 +1,7 @@
+<div class="card mt-3">
+    <div class="card-header" *ngIf="userTasks.length > 0">Darbuotojo užduočių sąrašas</div>
+        <div class="card-body" *ngFor="let task of userTasks; let i = index">
+            {{task.project}} {{task.description}}
+        </div>
+</div>
+
